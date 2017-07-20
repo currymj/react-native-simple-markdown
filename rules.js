@@ -165,7 +165,7 @@ export default (styles) => ({
 
       const rows = _.map(node.cells, (row, r) => {
         const cells = _.map(row, (content, c) => {
-          return createElement(View, {
+          return createElement(Text, {
             key: c,
             style: styles.tableRowCell
           }, output(content, state))
